@@ -4,9 +4,9 @@
 	<title>Home</title>
 	<style>
 		.logo {
-			width: 100px;
-			margin-left: 20px;
-			margin-top: 20px;
+			width: 200px;
+			margin-left: 40px;
+			margin-top: 40px;
 		}
 		.grid{
 			display: flex;
@@ -23,7 +23,7 @@
 			margin-bottom: -5px;
 		}
 		.button{
-			color: rgb(43, 5, 255);
+			color: rgb(138, 118, 255);
 			background: black;
 			font-size: 20px;
 			border-radius: 10px;
@@ -49,23 +49,23 @@
 		<form action="{{ url_for('credit_risk_prediction')}}" method="POST">
             <div>
               <label for="age"><h3>Age:</h3></label>
-              <textarea name="age" rows="6" cols="60"></textarea>
+              <textarea name="age" rows="2" cols="20"></textarea>
             </div>
             <div>
-              <label for="income"><h3>Income:</h3></label>
-              <textarea name="income" rows="6" cols="60"></textarea>
+              <label for="income"><h3>Annual Income:</h3></label>
+              <textarea name="income" rows="2" cols="20"></textarea>
             </div>
             <div>
-              <label for="debt"><h3>Debt:</h3></label>
-              <textarea name="debt" rows="6" cols="60"></textarea>
+              <label for="debt"><h3>Years working:</h3></label>
+              <textarea name="debt" rows="2" cols="20"></textarea>
             </div>
             <div>
-              <label for="credit_score"><h3>Credit Score:</h3></label>
-              <textarea name="credit_score" rows="6" cols="60"></textarea>
+              <label for="credit_score"><h3>How much money do you need?:</h3></label>
+              <textarea name="credit_score" rows="2" cols="20"></textarea>
             </div>
             <div>
-              <label for="is_employed"><h3>Employment Status:</h3></label>
-              <textarea name="is_employed" rows="6" cols="60"></textarea>
+              <label for="cb_person_cred_hist_length"><h3>Months of debt:</h3></label>
+              <textarea name="cb_person_cred_hist_length" rows="2" cols="20"></textarea>
             </div>
             <br/>
             <br/>
