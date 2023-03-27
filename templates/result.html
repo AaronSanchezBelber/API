@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit</title>
+	<style>
+				.logo {
+			width: 100px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.grid{
+			display: flex;
+		}
+		.header-container{
+			display: flex;
+			flex-direction: column;
+		}
+		.ml-container{
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: 50px;
+		}
+		.title{
+			color: #6363ad;
+			margin-bottom: -5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.button{
+			color: rgb(43, 5, 255);
+			background: black;
+			font-size: 20px;
+			border-radius: 10px;
+			height: 40px;
+			width: 100px;
+		}
+		.image{
+			height: 300px
+		}
+	</style>
+</head>
+<body>
+     
+	<header>
+		<div class="container">
+			<div id="brandname">
+				<h2 class="title" align="center">Credit Result</h2>
+			</div>
+		</div>
+	</header>
+
+	<div class="ml-container">
+	
+	<div class="results" align="center">
+		
+		{% if prediction == 1%}
+		<img class="image" src="https://img.freepik.com/vector-premium/senal-stop-senal-prohibicion-roja-simbolo-prohibido_288189-599.jpg">
+		<h2 style="color:#C44837;">No credit</h2>
+		{% elif prediction == 0%}
+		<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Check_green_circle.svg/1200px-Check_green_circle.svg.png">
+		<h2 style="color:#00ff5e;">You have credit</h2>
+		{% endif %}
+		
+		<a href="..">
+		<input class="button" type="submit" value="Back">
+		</a>
+	</div>
+</div>
+
+</body>
+</html>
