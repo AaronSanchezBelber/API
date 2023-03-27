@@ -14,7 +14,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/credit_risk_prediction',methods=['POST'])
 def credit_risk_prediction():
     if request.method == 'POST':
         age = int(request.form['age'])
